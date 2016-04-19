@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">AjayElectro</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_after_start">AfterStart</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_slide__menu">Slide_Menu</string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="spinner_title">select Categories</string>
+<!--Graphtec Corp.,Japan-->
+    <string-array name="graphtec_subitems">
+        <item>Data Plateform</item>
+        <item>Petit Logger</item>
+        <item>Mini Logger</item>
+        <item>Mount Corder</item>
+        <item>Cutting Plotters</item>
+    </string-array>
+
+    <!--CAT1_items_Kikusui electronics Corp,Japan-->
+    <string-array name="CAT1_items_Kikusui">
+        <item>DC Power Supplies</item>
+        <item>AC Supplies</item>
+        <item>Electronic Loads</item>
+        <item>Power Supply Controllers</item>
+    </string-array>
+
+    <!--CAT2_items_Kikusui electronics Corp,Japan-->
+    <string-array name="CAT2_items_Kikusui">
+        <item>Electrical Safety Testers</item>
+        <item>EMC Testers</item>
+        <item>Harmonic and Flicker Testers</item>
+        <item>FC Impedance Meters</item>
+        <item>Battery Capacitor Testers</item>
+        <item>Signal Generators</item>
+        <item>Test and Measurements</item>
+    </string-array>
+
+    <!--CAT3_items_Kikusui electronics Corp,Japan-->
+    <string-array name="CAT3_items_Kikusui">
+        <item>Software Products</item>
+        <item>Rack Mount Accessories</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Home</item>
+        <item >Our Products</item>
+        <item >Service and Maintenance</item>
+        <item >Communities</item>
+    </string-array>
+<string-array name="grid_price">
+    <item>2000</item>
+    <item>2000</item>
+    <item>2000</item>
+    <item>2000</item>
+    <item>2000</item>
+    </string-array>
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/home_icon</item>
+        <item>@drawable/product</item>
+        <item>@drawable/support</item>
+        <item>@drawable/ribbon1</item>
+        <item>@drawable/logout</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_sliding_menu">SlidingMenu</string>
+    <string name="title_activity_grid">Grid</string>
+    <string name="title_activity_horizintalview">Horizintalview</string>
+    <string name="title_activity_expandable__slideview">Expandable_Slideview</string>
+
+</resources>
