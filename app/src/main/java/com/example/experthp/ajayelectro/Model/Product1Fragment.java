@@ -37,7 +37,7 @@ public class Product1Fragment extends Fragment
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.product1fragment, container, false);
         grid = (GridView) rootView.findViewById(R.id.gridview);
-        GridTitles = getResources().getStringArray(R.array.nav_drawer_items);
+        GridTitles = getResources().getStringArray(R.array.graphtec_cat1_name);
         GridPrice = getResources().getStringArray(R.array.grid_price);
         GridIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
 

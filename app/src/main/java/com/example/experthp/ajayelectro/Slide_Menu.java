@@ -20,7 +20,6 @@ import com.example.experthp.ajayelectro.Adapter.NavDrawerListAdapter;
 import com.example.experthp.ajayelectro.Model.Home_Fragment;
 import com.example.experthp.ajayelectro.Model.NavDrawerItem;
 import com.example.experthp.ajayelectro.Model.Product1Fragment;
-import com.example.experthp.ajayelectro.Model.Service1Fragment;
 
 import java.util.ArrayList;
 
@@ -56,7 +55,7 @@ public class Slide_Menu extends AppCompatActivity {
             mTitle = mDrawerTitle = getTitle();
 
             // load slide menu items
-            navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
+            navMenuTitles = getResources().getStringArray(R.array.graphtec_cat1_name);
 
             // nav drawer icons from resources
             navMenuIcons = getResources()
@@ -75,7 +74,7 @@ public class Slide_Menu extends AppCompatActivity {
             // Photos
             navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
             // Communities, Will add a counter here
-            navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
+            navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1)));
             // Pages
             navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
             // What's hot, We  will add a counter here
@@ -184,10 +183,10 @@ public class Slide_Menu extends AppCompatActivity {
                 break;
             case 3:
 
-                fragment = new Service1Fragment();
+                fragment = new Home_Fragment();
                 break;
             case 4:
-                fragment = new Service1Fragment();
+                fragment = new Home_Fragment();
                 break;
             default:
                 break;

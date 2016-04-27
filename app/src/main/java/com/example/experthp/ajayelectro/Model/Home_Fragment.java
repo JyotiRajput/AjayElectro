@@ -38,7 +38,7 @@ public class Home_Fragment extends Fragment {
         View rootView = inflater.inflate(R.layout.home_fragment, container, false
         );
         text= (TextView) rootView.findViewById(R.id.txtLabel);
-        text.setText("jyoti");
+        text.setText("Home Fragment implementation is still pending");
         return rootView;
 
     }}

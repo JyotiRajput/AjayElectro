@@ -14,7 +14,7 @@
     <ExpandableListView
         android:layout_marginTop="50dp"
         android:id="@+id/list_slidermenu"
-        android:layout_width="240dp"
+        android:layout_width="260dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:choiceMode="singleChoice"

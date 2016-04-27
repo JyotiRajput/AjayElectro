@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16dp"
-        android:text="Home View"
+        android:text="Home in progress"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -16,12 +16,13 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="80dp" />
 
-    <ImageView android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_alignRight="@id/txtLabel"
+    <ImageView android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/txtLabel"
         android:src="@drawable/home_icon"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="80dp" />
 
 
 </RelativeLayout>

@@ -5,8 +5,6 @@ import android.app.FragmentManager;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,18 +13,14 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.experthp.ajayelectro.Adapter.ExpandListAdapter;
-import com.example.experthp.ajayelectro.Adapter.NavDrawerListAdapter;
+import com.example.experthp.ajayelectro.Model.Graphtec_CAT1_Fragment;
 import com.example.experthp.ajayelectro.Model.Home_Fragment;
 import com.example.experthp.ajayelectro.Model.NavDrawerItem;
 import com.example.experthp.ajayelectro.Model.Product1Fragment;
-import com.example.experthp.ajayelectro.Model.Service1Fragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -96,32 +90,32 @@ public class Expandable_Slideview extends AppCompatActivity {
         // adding Expandale group items to array
         //SubCat1_Graphtec
         ArrayList<NavDrawerItem> navDrawerItems1 = new ArrayList<NavDrawerItem>();
-        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[0], navMenuIcons.getResourceId(0, -1)));
-        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[1], navMenuIcons.getResourceId(1, -1)));
-        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[2], navMenuIcons.getResourceId(2, -1)));
-        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[3], navMenuIcons.getResourceId(3, -1), true, "22"));
-        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[4], navMenuIcons.getResourceId(4, -1)));
+        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[0], navMenuIcons.getResourceId(1, -1)));
+        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[1], navMenuIcons.getResourceId(2, -1)));
+        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[2], navMenuIcons.getResourceId(3, -1)));
+        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[3], navMenuIcons.getResourceId(4, -1)));
+        navDrawerItems1.add(new NavDrawerItem(Graphtec_subitems[4], navMenuIcons.getResourceId(5, -1)));
 
         // Subcat_Kikusui1
         ArrayList<NavDrawerItem> navDrawerItems2 = new ArrayList<NavDrawerItem>();
-        navDrawerItems2.add(new NavDrawerItem(CAT1_items_Kikusui1[0], navMenuIcons.getResourceId(0, -1)));
-        navDrawerItems2.add(new NavDrawerItem(CAT1_items_Kikusui1[1], navMenuIcons.getResourceId(1, -1)));
-        navDrawerItems2.add(new NavDrawerItem(CAT1_items_Kikusui1[2], navMenuIcons.getResourceId(2, -1)));
-        navDrawerItems2.add(new NavDrawerItem(CAT1_items_Kikusui1[3], navMenuIcons.getResourceId(3, -1), true, "22"));
+        navDrawerItems2.add(new NavDrawerItem(CAT1_items_Kikusui1[0], navMenuIcons.getResourceId(6, -1)));
+        navDrawerItems2.add(new NavDrawerItem(CAT1_items_Kikusui1[1], navMenuIcons.getResourceId(7, -1)));
+        navDrawerItems2.add(new NavDrawerItem(CAT1_items_Kikusui1[2], navMenuIcons.getResourceId(8, -1)));
+        navDrawerItems2.add(new NavDrawerItem(CAT1_items_Kikusui1[3], navMenuIcons.getResourceId(9, -1)));
 
         // // Subcat_Kikusui2
         ArrayList<NavDrawerItem> navDrawerItems3 = new ArrayList<NavDrawerItem>();
-        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[0], navMenuIcons.getResourceId(0, -1)));
+        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[0], navMenuIcons.getResourceId(6, -1)));
         navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[1], navMenuIcons.getResourceId(1, -1)));
         navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[2], navMenuIcons.getResourceId(2, -1)));
-        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[3], navMenuIcons.getResourceId(3, -1), true, "22"));
-        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[4], navMenuIcons.getResourceId(3, -1), true, "22"));
-        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[5], navMenuIcons.getResourceId(3, -1), true, "22"));
-        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[6], navMenuIcons.getResourceId(3, -1), true, "22"));
+        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[3], navMenuIcons.getResourceId(3, -1)));
+        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[4], navMenuIcons.getResourceId(3, -1)));
+        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[5], navMenuIcons.getResourceId(3, -1)));
+        navDrawerItems3.add(new NavDrawerItem(CAT2_items_Kikusui2[6], navMenuIcons.getResourceId(3, -1)));
 
         // Subcat_Kikusui3
         ArrayList<NavDrawerItem> navDrawerItems4 = new ArrayList<NavDrawerItem>();
-        navDrawerItems4.add(new NavDrawerItem(CAT3_items_Kikusui3[0], navMenuIcons.getResourceId(0, -1)));
+        navDrawerItems4.add(new NavDrawerItem(CAT3_items_Kikusui3[0], navMenuIcons.getResourceId(3, -1)));
         navDrawerItems4.add(new NavDrawerItem(CAT3_items_Kikusui3[1], navMenuIcons.getResourceId(1, -1)));
 
         navMenuIcons.recycle();
@@ -145,6 +139,7 @@ public class Expandable_Slideview extends AppCompatActivity {
                 // Toast.makeText(getApplicationContext(),
                 if (groupPosition==0)
                 {
+
                     displayView(0);
                     return true;
                 }
@@ -267,17 +262,17 @@ public class Expandable_Slideview extends AppCompatActivity {
                 fragment = new Home_Fragment();
                 break;
             case 1:
-                fragment = new Home_Fragment();
+                fragment = new Graphtec_CAT1_Fragment();
                 break;
             case 2:
-                fragment = new Product1Fragment();
+                fragment = new Graphtec_CAT1_Fragment();
                 break;
             case 3:
 
-                fragment = new Service1Fragment();
+                fragment = new Graphtec_CAT1_Fragment();
                 break;
             case 4:
-                fragment = new Service1Fragment();
+                fragment = new Graphtec_CAT1_Fragment();
                 break;
             default:
                 break;

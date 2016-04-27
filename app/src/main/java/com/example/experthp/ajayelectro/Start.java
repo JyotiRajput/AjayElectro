@@ -18,7 +18,7 @@ public class Start extends AppCompatActivity {
 
         new Timer().schedule(new TimerTask() {
             public void run() {
-                startActivity(new Intent(Start.this, Expandable_Slideview.class));
+                startActivity(new Intent(Start.this, Login.class));
 
             }
         }, 10000);

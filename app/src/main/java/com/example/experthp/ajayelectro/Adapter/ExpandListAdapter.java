@@ -58,19 +58,13 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 
         ImageView imgIcon = (ImageView) convertView.findViewById(R.id.icon);
         TextView txtTitle = (TextView) convertView.findViewById(R.id.title);
-        TextView txtCount = (TextView) convertView.findViewById(R.id.counter);
 
         imgIcon.setImageResource(childitem.getIcon());
         txtTitle.setText(childitem.getTitle());
 
         // displaying count
         // check whether it set visible or not
-        if(childitem.getCounterVisibility()){
-            txtCount.setText(childitem.getCount());
-        }else{
-            // hide the counter view
-            txtCount.setVisibility(View.GONE);
-        }
+
 
         return convertView;
 
@@ -128,7 +122,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 
         TextView lblListHeader = (TextView) convertView
                 .findViewById(R.id.lblListHeader);
-        lblListHeader.setTypeface(null, Typeface.BOLD);
+        lblListHeader.setTypeface(null, Typeface.NORMAL);
         lblListHeader.setText(headerTitle);
 
         return convertView;
